@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Портфолио Ахрора, Junior Frontend Developer из Ташкента. HTML, CSS, JavaScript, React и адаптивная верстка." />
+  <meta name="keywords"
+    content="Frontend Developer, Junior Frontend, портфолио, Ахрор, React, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Ташкент" />
+  <meta name="author" content="Ахрор" />
+  <meta property="og:title" content="Ахрор - Frontend Developer" />
+  <meta property="og:description"
+    content="Создаю современные адаптивные сайты с использованием HTML, CSS, JavaScript и React." />
+  <meta property="og:type" content="website" />
+  <title>Ахрор - Frontend Developer</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.png" />
+  <link rel="shortcut icon" href="./favicon.png" />
+  <link rel="apple-touch-icon" href="./favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<body>
+  <header class="site-header" data-header>
+    <a class="logo" href="#top" aria-label="Ахрор — на главную">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <path d="M8 38 21 10h6l13 28h-7l-2.6-6H17.6L15 38H8Z" />
+          <path d="M20.2 26h7.6L24 17.1 20.2 26Z" />
+          <path
+            d="M31 14h5.5c5.2 0 8 2.6 8 6.7 0 2.7-1.3 4.8-3.8 5.9L45 38h-6.8l-3.4-9.4H31V14Zm5.2 9.4c1.7 0 2.6-.9 2.6-2.4 0-1.6-.9-2.4-2.6-2.4H36v4.8h.2Z" />
+        </svg>
+      </span>
+      <span class="logo-text">AHROR</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация" data-nav>
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Включить тёмную тему"
+        aria-pressed="false">
+        <span class="theme-track" aria-hidden="true">
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24" focusable="false">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path
+              d="M12 3v2.5M12 18.5V21M5.64 5.64l1.77 1.77M16.59 16.59l1.77 1.77M3 12h2.5M18.5 12H21M5.64 18.36l1.77-1.77M16.59 7.41l1.77-1.77">
+            </path>
+          </svg>
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24" focusable="false">
+            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"></path>
+          </svg>
+          <span class="theme-thumb"></span>
+        </span>
+      </button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Привет, я Ахрор 👋</p>
+        <p class="availability"><span></span>Доступен для новых проектов</p>
+        <h1>Frontend Developer</h1>
+        <p class="hero-text">
+          Frontend Developer из Ташкента. Создаю современные адаптивные сайты
+          и веб-приложения.
+        </p>
+        <div class="hero-meta" aria-label="Ключевые направления">
+          <span>Responsive UI</span>
+          <span>Clean Code</span>
+          <span>React Ready</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Посмотреть проекты <span>→</span></a>
+          <a class="button button-secondary" href="#contacts">Связаться со мной</a>
+        </div>
+        <div class="hero-stats" aria-label="Краткая статистика">
+          <article>
+            <strong>1+</strong>
+            <span>год обучения</span>
+          </article>
+          <article>
+            <strong>10+</strong>
+            <span>проектов</span>
+          </article>
+          <article>
+            <strong>Frontend</strong>
+            <span>HTML • CSS • JS</span>
+          </article>
+          <article>
+            <strong>∞</strong>
+            <span>развитие</span>
+          </article>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <img src="./assets/ahror-portrait.png" alt="Ахрор">
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="section-copy reveal">
+        <p class="section-kicker">01 / Обо мне</p>
+        <h2 id="about-title">Обо мне</h2>
+        <p>
+          Я начинающий Frontend-разработчик из Ташкента. Изучаю современные
+          технологии веб-разработки и постоянно совершенствую свои навыки.
+          Люблю создавать красивые, быстрые и удобные сайты.
+        </p>
+      </div>
+      <div class="stats-grid reveal">
+        <article class="stat-card">
+          <strong>1+</strong>
+          <span>год изучения Frontend</span>
+        </article>
+        <article class="stat-card">
+          <strong>10+</strong>
+          <span>учебных проектов</span>
+        </article>
+        <article class="stat-card">
+          <strong>∞</strong>
+          <span>постоянное обучение</span>
+        </article>
+        <article class="stat-card">
+          <strong>100%</strong>
+          <span>адаптивная верстка</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">02 / Навыки</p>
+        <h2 id="skills-title">Технологии и инструменты</h2>
+        <p class="section-lead">
+          Использую современные технологии для создания адаптивных, удобных и
+          красивых веб-сайтов.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <span class="skill-logo html" aria-hidden="true">
+            <svg viewBox="0 0 128 128" focusable="false">
+              <path fill="#e34f26" d="M19 3h90l-8 91-37 10-37-10L19 3Z" />
+              <path fill="#ef652a" d="M64 11h37l-7 77-30 8V11Z" />
+              <path fill="#fff" d="M35 30h29v11H47l1 11h16v11H38L35 30Zm4 39h11l1 9 13 4v11l-23-7-2-17Z" />
+              <path fill="#fff" d="M64 52h15l1-11H64V30h28l-3 33H64V52Zm0 30 13-4 1-9h11l-2 17-23 7V82Z" />
+            </svg>
+          </span>
+          <h3>HTML5</h3>
+          <p>Создание структуры веб-страниц</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-logo css" aria-hidden="true">
+            <svg viewBox="0 0 128 128" focusable="false">
+              <path fill="#1572b6" d="M19 3h90l-8 91-37 10-37-10L19 3Z" />
+              <path fill="#33a9dc" d="M64 11h37l-7 77-30 8V11Z" />
+              <path fill="#fff" d="M35 30h29v11H47l1 11h16v11H38L35 30Zm4 39h11l1 9 13 4v11l-23-7-2-17Z" />
+              <path fill="#fff" d="M64 52h15l1-11H64V30h28l-3 33H64V52Zm0 30 13-4 1-9h11l-2 17-23 7V82Z" />
+            </svg>
+          </span>
+          <h3>CSS3</h3>
+          <p>Стилизация интерфейсов</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-logo js" aria-hidden="true">
+            <svg viewBox="0 0 128 128" focusable="false">
+              <path fill="#f7df1e" d="M16 16h96v96H16V16Z" />
+              <path fill="#111"
+                d="M42 92c2 3 5 5 9 5 4 0 7-2 7-8V51h12v38c0 13-8 19-19 19-10 0-16-5-19-11l10-5Zm39-1c3 5 7 7 13 7 5 0 8-2 8-6 0-4-3-5-9-8l-3-1c-10-4-16-9-16-19 0-10 8-17 20-17 9 0 15 3 20 11l-9 6c-2-4-5-6-10-6-4 0-7 2-7 6 0 4 2 5 8 8l3 1c11 5 17 9 17 20 0 11-9 17-21 17-12 0-20-6-24-13l10-6Z" />
+            </svg>
+          </span>
+          <h3>JavaScript</h3>
+          <p>Интерактивность и логика</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-logo react" aria-hidden="true">
+            <svg viewBox="0 0 128 128" focusable="false">
+              <circle cx="64" cy="64" r="11" fill="#61dafb" />
+              <g fill="none" stroke="#61dafb" stroke-width="6">
+                <ellipse cx="64" cy="64" rx="52" ry="20" />
+                <ellipse cx="64" cy="64" rx="52" ry="20" transform="rotate(60 64 64)" />
+                <ellipse cx="64" cy="64" rx="52" ry="20" transform="rotate(120 64 64)" />
+              </g>
+            </svg>
+          </span>
+          <h3>React</h3>
+          <p>Создание современных интерфейсов</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-logo tailwind" aria-hidden="true">
+            <svg viewBox="0 0 128 128" focusable="false">
+              <path fill="#38bdf8"
+                d="M64 35c-15 0-24 8-28 24 6-8 13-11 22-8 5 1 9 5 13 9 7 7 15 14 31 14 15 0 24-8 28-24-6 8-13 11-22 8-5-1-9-5-13-9-7-7-15-14-31-14ZM36 67c-15 0-24 8-28 24 6-8 13-11 22-8 5 1 9 5 13 9 7 7 15 14 31 14 15 0 24-8 28-24-6 8-13 11-22 8-5-1-9-5-13-9-7-7-15-14-31-14Z" />
+            </svg>
+          </span>
+          <h3>Tailwind CSS</h3>
+          <p>Быстрая современная стилизация</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-logo bootstrap" aria-hidden="true">
+            <svg viewBox="0 0 128 128" focusable="false">
+              <path fill="#7952b3"
+                d="M23 18h82c8 0 14 6 14 14v64c0 8-6 14-14 14H23c-8 0-14-6-14-14V32c0-8 6-14 14-14Z" />
+              <path fill="#fff"
+                d="M48 36h25c12 0 20 6 20 16 0 7-4 12-11 14 9 2 14 8 14 17 0 12-9 19-23 19H48V36Zm13 27h10c6 0 9-3 9-8s-3-8-9-8H61v16Zm0 28h12c6 0 10-3 10-9s-4-9-10-9H61v18Z" />
+            </svg>
+          </span>
+          <h3>Bootstrap</h3>
+          <p>Адаптивная верстка и готовые компоненты</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">03 / Проекты</p>
+        <h2 id="projects-title">Выбранные проекты</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card project-featured reveal">
+          <div class="project-shot project-image pro-cleaning-shot">
+            <img src="assets/for project's/pro_cleaning.png" alt="Скриншот сайта Pro Cleaning" />
+          </div>
+          <div class="project-body">
+            <h3>Pro Cleaning</h3>
+            <p>Современный сайт клининговой компании, разработанный на React и Tailwind CSS. Проект включает адаптивную
+              верстку, современный пользовательский интерфейс, плавные анимации и удобную навигацию для клиентов.</p>
+            <div class="tags"><span>React</span><span>Tailwind CSS</span><span>JavaScript</span><span>Responsive
+                Design</span></div>
+            <div class="project-actions">
+              <a href="https://proclean1n.netlify.app/" target="_blank" rel="noreferrer"
+                aria-label="Открыть Demo Pro Cleaning в новой вкладке">Demo <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/rruzmatov/Pro-Cleaning" target="_blank" rel="noreferrer"
+                aria-label="Открыть GitHub Pro Cleaning в новой вкладке"><span aria-hidden="true">⌘</span> GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-featured reveal">
+          <div class="project-shot project-image interno-shot">
+            <img src="assets/interno-screenshot.png" alt="Скриншот сайта Interno" />
+          </div>
+          <div class="project-body">
+            <h3>Interno</h3>
+            <p>Современный адаптивный сайт для студии дизайна интерьеров с премиальным интерфейсом, плавными анимациями,
+              продуманной структурой страниц и высоким уровнем пользовательского опыта.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://internolast.netlify.app/" target="_blank" rel="noreferrer"
+                aria-label="Открыть Demo Interno в новой вкладке">Demo <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/rruzmatov/interno" target="_blank" rel="noreferrer"
+                aria-label="Открыть GitHub Interno в новой вкладке">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path
+                    d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.2-3.37-1.2-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.64.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.57 9.57 0 0 1 12 6c.85 0 1.7.11 2.5.33 1.9-1.3 2.74-1.03 2.74-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86V21c0 .26.18.58.69.48A10 10 0 0 0 12 2Z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+  <div class="project-shot project-image">
+    <img src="assets/2rism.png" alt="Скриншот 2rism" />
+  </div>
+  <div class="project-body">
+    <h3>2rism</h3>
+    <p>
+      Современный туристический сайт для поиска направлений, отелей и путешествий
+      с адаптивным интерфейсом, продуманной структурой и премиальным дизайном.
+    </p>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+    </div>
+    <div class="project-actions">
+      <a href="https://2rissm.netlify.app/" target="_blank" rel="noreferrer">
+        Demo <span>↗</span>
+      </a>
+      <a href="https://github.com/rruzmatov/2rism" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+    </div>
+  </div>
+</article>
+        <article class="project-card reveal">
+          <div class="project-shot project-image js-mentor-shot">
+            <img src="assets/js-mentor-academy.png" alt="Скриншот JS Mentor Academy" />
+          </div>
+          <div class="project-body">
+            <h3>JS Mentor Academy</h3>
+            <p>Интерактивная обучающая платформа по JavaScript с пошаговыми уроками, практическими заданиями, системой
+              прогресса и уровнями сложности. Помогает изучать JavaScript от основ до уровня Junior Frontend Developer.
+            </p>
+            <div class="tags"><span>React</span><span>JavaScript</span><span>CSS</span><span>Responsive Design</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://js-mentor-academy.netlify.app" target="_blank" rel="noreferrer"
+                aria-label="Открыть Demo JS Mentor Academy">Demo <span>↗</span></a>
+              <a href="https://github.com/rruzmatov/js-mentor-academy" target="_blank" rel="noreferrer"
+                aria-label="Открыть GitHub JS Mentor Academy">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-shot project-image">
+            <img src="assets/LogisStudy.png" alt="Скриншот LogiStudy" />
+          </div>
+
+          <div class="project-body">
+            <h3>LogiStudy</h3>
+
+            <p>
+              Современная образовательная платформа для изучения логистики с нуля.
+              Включает систему уровней, прогресс обучения, личный кабинет,
+              интерактивные уроки и адаптивный интерфейс для комфортного обучения.
+            </p>
+
+            <div class="tags">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Supabase</span>
+              <span>Responsive Design</span>
+            </div>
+
+            <div class="project-actions">
+              <a href="https://logiststudy.netlify.app/" target="_blank" rel="noreferrer">
+                Demo <span>↗</span>
+              </a>
+              <a href="https://github.com/rruzmatov/LogistStudy" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+  <div class="project-shot project-image">
+    <img src="assets/portfolio.png" alt="Скриншот портфолио" />
+  </div>
+  <div class="project-body">
+    <h3>Portfolio Website</h3>
+    <p>
+      Современное персональное портфолио Frontend Developer с адаптивным дизайном,
+      тёмной и светлой темой, плавными анимациями, секцией проектов и контактами.
+    </p>
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Responsive Design</span>
+    </div>
+    <div class="project-actions">
+      <a href="#top">
+        Demo <span>↗</span>
+      </a>
+      <a href="https://github.com/rruzmatov" target="_blank" rel="noreferrer">
+        GitHub
+      </a>
+    </div>
+  </div>
+</article>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">04 / Контакты</p>
+        <h2 id="contacts-title">Связаться со мной</h2>
+      </div>
+      <div class="contact-grid reveal">
+        <a href="https://t.me/rruzmatov" target="_blank" rel="noreferrer"><span style="font-size: 1.9rem;"><i
+              class="bi bi-telegram"></i></span>Telegram</a>
+        <a href="https://github.com/rruzmatov" target="_blank" rel="noreferrer"><span style="font-size: 1.9rem;"><i
+              class="bi bi-github"></i></span>GitHub</a>
+        <a href="mailto:ahrorbekruzmatov74@gmail.com"><span style="font-size: 1.9rem;"><i
+              class="bi bi-envelope"></i></span>Gmail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#top" aria-label="Ахрор — на главную">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <path d="M8 38 21 10h6l13 28h-7l-2.6-6H17.6L15 38H8Z" />
+          <path d="M20.2 26h7.6L24 17.1 20.2 26Z" />
+          <path
+            d="M31 14h5.5c5.2 0 8 2.6 8 6.7 0 2.7-1.3 4.8-3.8 5.9L45 38h-6.8l-3.4-9.4H31V14Zm5.2 9.4c1.7 0 2.6-.9 2.6-2.4 0-1.6-.9-2.4-2.6-2.4H36v4.8h.2Z" />
+        </svg>
+      </span>
+      <span class="logo-text">AHROR</span>
+    </a>
+    <nav aria-label="Навигация в подвале">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer-links">
+      <a href="https://t.me/rruzmatov" target="_blank" rel="noreferrer">Telegram</a>
+      <a href="https://github.com/rruzmatov" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="mailto:ahrorbekruzmatov74@gmail.com">ahrorbekruzmatov74@gmail.com</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Наверх">↑</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
