@@ -22,11 +22,36 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
     rel="stylesheet" />
+  <script>
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) document.documentElement.dataset.theme = storedTheme;
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<link rel="stylesheet" href="styles.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<body>
+<body class="is-loading">
+  <div class="preloader" data-preloader aria-live="polite" aria-label="Загрузка сайта">
+    <div class="preloader-card">
+      <div class="preloader-logo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <path d="M8 38 21 10h6l13 28h-7l-2.6-6H17.6L15 38H8Z" />
+          <path d="M20.2 26h7.6L24 17.1 20.2 26Z" />
+          <path
+            d="M31 14h5.5c5.2 0 8 2.6 8 6.7 0 2.7-1.3 4.8-3.8 5.9L45 38h-6.8l-3.4-9.4H31V14Zm5.2 9.4c1.7 0 2.6-.9 2.6-2.4 0-1.6-.9-2.4-2.6-2.4H36v4.8h.2Z" />
+        </svg>
+      </div>
+      <div class="preloader-copy">
+        <strong>AHROR</strong>
+        <span>Frontend Developer</span>
+      </div>
+      <div class="preloader-progress" aria-hidden="true">
+        <span data-progress-fill></span>
+      </div>
+      <p class="preloader-percent" data-progress-text>0%</p>
+      <div class="preloader-status">Loading Assets…</div>
+    </div>
+  </div>
   <header class="site-header" data-header>
     <a class="logo" href="#top" aria-label="Ахрор — на главную">
       <span class="logo-mark" aria-hidden="true">
